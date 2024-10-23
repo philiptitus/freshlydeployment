@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="YOUR_CSRF_TOKEN_HERE"> <!-- Make sure to replace this with your actual CSRF token -->
+    <title>Blog Search</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="search-container">
+        <div class="search-box">
+            <input
+                type="text"
+                id="search-input"
+                class="search-input"
+                placeholder="Search for news, media, etc..."
+            />
+            <button id="search-button" class="search-button" aria-label="Search">
+                <img
+                    src="/static/media/searchIcon.png"
+                    alt="Search Icon"
+                    class="search-icon"
+                />
+            </button>
+        </div>
+        <div id="error-message" class="error-message"></div>
+        <ul id="results" class="results-list"></ul>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

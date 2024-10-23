@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile - Freshly Farms</title>
+</head>
+<body>
+    <h1>Your Profile</h1>
+    <p>Name: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
+    <a href="{% url 'logout' %}">Log Out</a>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services - Freshly Farms</title>
+</head>
+<body>
+    <h1>Services</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Request Service</button>
+    </form>
+    <ul>
+        {% for service in services %}
+        <li>{{ service.type }} - {{ service.description }} - ${{ service.price }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
